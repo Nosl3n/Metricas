@@ -10,15 +10,11 @@ grid on;
 xx = [2 3 2];
 yy = [10 10 15];
 hold on;
-plot (xx, yy);
+plot (xx, yy,'o');
 %% metricas
 % longitud total
 longitud = long_total (x,y)
 % distancia a la spersonas
 distan_group = cercanos_grupo (xx,yy,x,y)
 % smooth
-k=numel(x)-1;
-for i=1:1:length(x)-2
-    angulo(i) = ang_entre_rectas(x(i),x(i+1),x(i+2),y(i),y(i+1),y(i+2));
-end
-smoothy = (1/k)*sum(angulo)^2
+smoothy = metrica_smooth(x,y)
