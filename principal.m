@@ -13,8 +13,13 @@ hold on;
 plot (xx, yy,'o');
 %% metricas
 % longitud total
-longitud = long_total (x,y)
+longitud = long_total (x,y);
 % distancia a la spersonas
-distan_group = cercanos_grupo (xx,yy,x,y)
+distan_group = cercanos_grupo (xx,yy,x,y);
 % smooth
-smoothy = metrica_smooth(x,y)
+smoothy = metrica_smooth(x,y);
+%% prueba
+while 
+    while
+    end
+end
