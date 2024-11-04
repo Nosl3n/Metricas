@@ -19,7 +19,3 @@ distan_group = cercanos_grupo (xx,yy,x,y);
 % smooth
 smoothy = metrica_smooth(x,y);
 %% prueba
-while 
-    while
-    end
-end
