@@ -6,6 +6,7 @@ x = [1, 2, 3, 4, 5, 6, 7, 8];  % Coordenadas x
 y = [2, 4, 6, 9, 10, 12, 14, 16];  % Coordenadas y
 %x=0:0.8:5;
 %y=x.^2+x-5;
+error=1;
 n = length(x);  % Número de elementos
 % Bucle para ir aumentando el número de puntos
 for i = 3:n
@@ -23,7 +24,7 @@ for i = 3:n
     plot (x_selec, y_pred)
     hold on;
     ecm = mean((y_selec - y_pred).^2)
-    if ecm > 1 || n==3
+    if ecm > error || n==3
         break;
     end
     % Imprimir los puntos seleccionados

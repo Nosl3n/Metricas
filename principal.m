@@ -2,7 +2,7 @@ close all;
 clear all;
 clc;
 %% trayetoria
-x=0:0.1:5;
+x=-5:0.1:10;
 y=x.^2+x-5;
 plot (x,y);
 grid on;
@@ -10,12 +10,12 @@ grid on;
 xx = [2 3 2];
 yy = [10 10 15];
 hold on;
-plot (xx, yy,'o');
+plot (xx, yy,'o','Color','g');
 %% metricas
 % longitud total
-longitud = long_total (x,y);
+longitud = long_total (x,y)
 % distancia a la spersonas
-distan_group = cercanos_grupo (xx,yy,x,y);
+distan_group = cercanos_grupo (xx,yy,x,y)
 % smooth
-smoothy = metrica_smooth(x,y);
-%% prueba
+smoothy = suavidad (x,y,1);
+
